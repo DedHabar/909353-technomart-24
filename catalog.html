@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт Каталог товаров</title>
@@ -8,10 +7,16 @@
 </head>
 <body>
   <header class="main">
-        <a href="index.html" class="index-logo">Техномарт</a>
-        <!-- *Тут форма поиска -->
+        <a href="index.html" class="index-logo"><img src="img/ТЕХНОМАРТ.png" alt="Техномарт"></a>
+        <form class="search-form" action="/" method="get">
+          <img src="img/icon-search.svg">
+          <input type="text" name="search-query" placeholder="Поиск:">
+          <span class="icon-search"></span>
+        </form>
         <p class="shop">
+          <img src="img/icon-bookmark.svg">
           <a class="bookmarks" href="#">Закладки: <span class="number-bookmarks">0</span></a>
+          <img src="img/icon-cart.svg">
           <a class="basket basket-full" href="#">Корзина: <span class="item-number">0</span></a>
           <a class="order" href="#">Оформить заказ</a>
         </p>
@@ -20,13 +25,14 @@
             Интернет-магазин строительных материалов и инструментов для ремота
           </p>
           <span class="contacts-header">
+            <img src="img/icon-phone.svg">
             <b class="phone">+7 (812) 555-05-55</b>
             <p class="address">г. Сантк-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </span>
           <span class="user">
             <span class="btn-user user-id">
-              <a class="user-account" href="#">Равшан Джамшутович</a>
-              <a class="user-logout" href="#"></a>
+              <a class="user-account" href="#"><img src="img/icon-user.svg">Равшан Джамшутович</a>
+              <a class="user-logout" href="#"><img src="img/icon-logout.svg"></a>
             </span>
             <span class="user-controls">
               <a class="user-login" href="#">Мои заказы</a>
@@ -48,7 +54,7 @@
   </header>
   <main class="main-content">
       <ul class="breadcrumbs">
-        <li><a class="icon-home" href="/"></a></li>
+        <li><a class="icon-home" href="/"><img src="img/icon-home.svg"></a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><span>Перфораторы</span></li>
@@ -251,7 +257,7 @@
 <footer class="main-footer">
   <div class="footer-content">
     <div class="content-row-about-us">
-      <a class="index-logo">Техномарт</a>
+      <a class="index-logo"><img src="img/ТЕХНОМАРТ.png" alt="Техномарт"></a>
       <ul class="footer-menu">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
