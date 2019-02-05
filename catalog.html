@@ -12,7 +12,6 @@
     <a href="index.html" class="index-logo"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт"></a>
     <form class="search-form" action="/" method="get">
       <input type="text" name="search-query" placeholder="Поиск:">
-      <span class="icon-search"></span>
     </form>
     <p class="shop">
       <a class="bookmarks" href="#">Закладки: <span class="number-bookmarks">0</span></a>
@@ -296,7 +295,16 @@
       </p>
     </div>
   </footer>
-  <!--всплывающее окно оформления товара-->
-</body>
+  <div class="dialog" id="item-dialog">
+    <button class="dialog-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="dialog-content">
+      <div class="dialog-message message-icon-ok">Товар добавлен в корзину!</div>
+    </div>
+    <div class="dialog-footer">
+      <a class="btn" href="#">Оформить заказ</a>
+      <button class="btn btn-cancel">Продолжить покупки</button>
+    </div>
+  </div>
+  </body>
 
 </html>
