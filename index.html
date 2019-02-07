@@ -11,7 +11,7 @@
   <header class="main-header">
     <a class="index-logo"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт"></a>
     <form class="search-form" action="/" method="get">
-      <input type="text" name="search-query" placeholder="Поиск:">
+      <input type="search" name="search" placeholder="Поиск:" >
     </form>
     <p class="shop">
       <a class="bookmarks" href="#">Закладки: <span class="number-bookmarks">0</span></a>
@@ -22,10 +22,10 @@
       <h1 class="description">
         Интернет-магазин строительных материалов и инструментов для ремота
       </h1>
-      <span class="contacts-header">
-        <b class="phone">+7 (812) 555-05-55</b>
-        <a class="address">г. Сантк-Петербург, ул. Б. Конюшенная, д. 19/8</a>
-      </span>
+      <p class="contacts-header">
+        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <span class="address">г. Сантк-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </p>
       <div class="user">
         <a class="btn-user btn-enter" href="#">Войти</a>
         <a class="btn-user" href="#">Регистрация</a>
@@ -77,7 +77,7 @@
   <footer class="main-footer">
     <div class="footer-content">
       <div class="content-row-about-us">
-        <a class="index-logo"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт"></a>
+        <img src="img/logo-technomart.svg" width="138" height="23" class="index-logo" alt="Техномарт">
         <ul class="footer-menu">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -87,9 +87,10 @@
         </ul>
       </div>
       <div class="content-row-items">
-        <div class="footer-contacts">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
-        </div>
+        <p class="footer-contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
         <ul class="footer-menu second-menu">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
@@ -104,9 +105,9 @@
         <br> Все права защищены
       </p>
       <ul class="footer-social">
-        <li><a class="social-btn vk" href="#"></a></li>
-        <li><a class="social-btn facebook" href="#"></a></li>
-        <li><a class="social-btn instagramm" href="#"></a></li>
+        <li><a class="social-btn-vk" href="#">vkontakte</a></li>
+        <li><a class="social-btn-facebook" href="#">Facebook</a></li>
+        <li><a class="social-btn-instagramm" href="#">Instagramm</a></li>
       </ul>
       <p class="developers">
         <span>Разработано -</span>
@@ -118,22 +119,23 @@
       </p>
     </div>
   </footer>
-  <div class="feedback-modul">
-    <div class="name-text">
-      <h2>Ваше имя:</h2>
-      <input type="text" name="name" placeholder="Имя Фамилия">
-    </div>
-    <div class="mail-text">
-      <h2>Ваш e-mail:</h2>
-      <input type="text" name="mail" placeholder="email@example.com">
-    </div>
-    <h2>Текст письма:</h2>
-    <textarea type="mesage">В свободной форме</textarea>
-    <div class="submit-btn">
+  <section class="feedback-module decor">
+    <h2 class="visually-hidden">форма обратной связи</h2>
+    <button aria-label="закрыть"></button>
+    <form>
+      <p class="name-text">
+        <label for="your-name">Ваше имя:</label>
+        <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="mail-text">
+        <label for="your-mail">Ваш e-mail:</label>
+        <input id="your-mail" type="text" name="mail" placeholder="email@example.com">
+      </p>
+      <label for="text-letter">Текст письма:</label>
+      <textarea id="text-letter" name="message">В свободной форме</textarea>
       <button class="btn btn-go" type="submit">Отправить</button>
-      <a class="btn btn-close" href="">Отмена</a>
-    </div>
-  </div>
+    </form>
+  </section>
 
 </body>
 
