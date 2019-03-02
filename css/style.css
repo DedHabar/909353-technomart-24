@@ -34,6 +34,7 @@ input[type="radio"].visually-hidden {
     border: 0;
     padding: 0;
     white-space: nowrap;
+    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -64,6 +65,7 @@ input[type="radio"].visually-hidden {
 
 .list {
     list-style: none;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 0;
 }
@@ -82,12 +84,18 @@ input[type="radio"].visually-hidden {
 .up-line {
     font-size: 0;
     background: #293449;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .up-line-shop {
     min-height: 42px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -99,6 +107,7 @@ input[type="radio"].visually-hidden {
     width: 224px;
     font-size: 24px;
     background-color: #ee3643;
+    -webkit-box-shadow: 0 5px 0 0 #b52933;
     box-shadow: 0 5px 0 0 #b52933;
     display: inline-block;
 }
@@ -206,8 +215,15 @@ input[type="radio"].visually-hidden {
     min-height: 278px;
     color: #000;
     background-color: #f1f5f7;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -215,7 +231,11 @@ input[type="radio"].visually-hidden {
     width: 940px;
     padding: 45px 0 29px;
     margin-bottom: 16px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -285,6 +305,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     color: #000;
     background-color: #fff;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
 }
@@ -338,8 +359,13 @@ input[type="radio"].visually-hidden {
     min-height: 60px;
     background-color: #32425c;
     border-bottom: 3px solid #293449;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -369,8 +395,12 @@ input[type="radio"].visually-hidden {
 .inf {
     padding: 0;
     font-size: 13px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 87px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -420,6 +450,7 @@ input[type="radio"].visually-hidden {
     display: block;
     background-color: #ef4652;
     border-radius: 4px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 14px;
 }
@@ -442,6 +473,7 @@ input[type="radio"].visually-hidden {
     border-radius: 4px;
     display: block;
     line-height: 18px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 14px;
 }
@@ -471,6 +503,8 @@ input[type="radio"].visually-hidden {
     margin-right: 38px;
     line-height: 18px;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -486,7 +520,11 @@ input[type="radio"].visually-hidden {
 }
 
 .page-content {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -671,7 +709,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
     background: #f7f3ec;
     border-radius: 3px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -686,6 +728,8 @@ input[type="radio"].visually-hidden {
 
 .control {
     padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -695,8 +739,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-products-list {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 25px;
 }
@@ -816,7 +865,11 @@ input[type="radio"].visually-hidden {
 
 .filter-sort {
     width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -832,7 +885,11 @@ input[type="radio"].visually-hidden {
     min-height: 200px;
     font-size: 18px;
     color: #fff;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -853,6 +910,7 @@ input[type="radio"].visually-hidden {
     line-height: 45px;
     text-align: center;
     background-color: #ee3643;
+    -webkit-box-shadow: 0 5px 0 0 #b52933;
     box-shadow: 0 5px 0 0 #b52933;
     display: inline-block;
 }
@@ -892,6 +950,8 @@ input[type="radio"].visually-hidden {
 
 .footer-menu,
 .footer-second-menu {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 600px;
     display: inline-block;
@@ -916,8 +976,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-bottom {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     min-height: 107px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -945,6 +1009,8 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
     width: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1024,5 +1090,6 @@ input[type="radio"].visually-hidden {
     border-top: 7px solid #ee3643;
     width: 620px;
     background: #fff;
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
     box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
 }
