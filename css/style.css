@@ -2,8 +2,9 @@
 
 body,
 html {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    min-width: 960px;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -17,6 +18,25 @@ img {
     max-width: 100%;
     height: auto;
     border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .head-1 {
@@ -38,12 +58,14 @@ img {
 .head-3 {
     font-weight: 700;
     font-size: 17px;
-    line-height: 30px;
+    line-height: 18px;
     color: #000;
 }
 
 .list {
     list-style: none;
+    justify-content: space-around;
+    padding: 0;
 }
 
 .container {
@@ -58,15 +80,13 @@ img {
 }
 
 .up-line {
-    font-size: 17px;
+    font-size: 0;
     background: #293449;
-    flex-direction: column;
     align-items: center;
-    display: flex;
 }
 
 .up-line-shop {
-    height: 42px;
+    min-height: 42px;
     justify-content: space-between;
     display: flex;
 }
@@ -101,8 +121,9 @@ img {
 
 .shop {
     width: 450px;
-    margin: 6px;
     padding: 0;
+    display: inline-block;
+    text-align: right;
 }
 
 .input-text {
@@ -128,9 +149,9 @@ img {
     font-size: 17px;
     line-height: 18px;
     font-family: "Cuprum", "Arial", sans-serif;
-    text-decoration: none;
     color: #fff;
     background-color: #293449;
+    display: inline-block;
 }
 
 .bookmarks {
@@ -166,9 +187,9 @@ img {
     font-size: 17px;
     line-height: 18px;
     font-family: "Cuprum", "Arial", sans-serif;
-    text-decoration: none;
     color: #fff;
     background: #63a63e;
+    display: inline-block;
 }
 
 .order:hover {
@@ -192,7 +213,8 @@ img {
 
 .inform-reg {
     width: 940px;
-    padding: 45px;
+    padding: 45px 0 29px;
+    margin-bottom: 16px;
     justify-content: space-between;
     display: flex;
 }
@@ -210,14 +232,14 @@ img {
 }
 
 .contacts-header {
-    width: 340px;
+    width: 270px;
     font-weight: 400;
     font-style: normal;
     font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .phone {
-    padding: 8px 50px 5px 71px;
+    padding: 8px 0 5px 0;
     border: 3px solid #fff;
     width: 270px;
     font-size: 21px;
@@ -225,6 +247,7 @@ img {
     font-style: normal;
     line-height: 18px;
     color: #e9292a;
+    display: inline-block;
 }
 
 .address {
@@ -235,6 +258,7 @@ img {
 }
 
 .user {
+    margin: 0;
     font-size: 21px;
 }
 
@@ -242,6 +266,7 @@ img {
     margin-right: 5px;
     width: 120px;
     padding: 10px 25px 10px 48px;
+    display: inline-block;
 }
 
 .btn-reg {
@@ -258,10 +283,10 @@ img {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 18px;
-    text-decoration: none;
     color: #000;
     background-color: #fff;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .user a:hover {
@@ -278,7 +303,6 @@ img {
     font-size: 21px;
     line-height: 18px;
     font-family: "Cuprum", "Arial", sans-serif;
-    text-decoration: none;
     color: #000;
     background-color: #fff;
 }
@@ -309,15 +333,14 @@ img {
 
 /* панель навигации heder-а */
 
-.main-navigation {
-    width: 940px;
-    margin-top: -16px;
-    min-height: 57px;
+.main-navigation .list {
+    padding: 0 50px;
     min-height: 60px;
     background-color: #32425c;
     border-bottom: 3px solid #293449;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main-navigation li {
@@ -329,8 +352,8 @@ img {
     font-size: 17px;
     line-height: 17px;
     font-family: "Cuprum", "Arial", sans-serif;
-    text-decoration: none;
     color: #fff;
+    display: block;
 }
 
 .main-navigation a:hover {
@@ -344,7 +367,6 @@ img {
 /* информационная часть над footerom */
 
 .inf {
-    margin: 0;
     padding: 0;
     font-size: 13px;
     align-items: center;
@@ -357,7 +379,7 @@ img {
 }
 
 .contacts {
-    padding-left: 100px;
+    margin-left: auto;
 }
 
 .side-header,
@@ -382,7 +404,9 @@ img {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 40px;
-    margin-bottom: 38px;
+    margin-bottom: 33px;
+    padding-left: 30px;
+    display: inherit;
 }
 
 .about-company .btn {
@@ -392,7 +416,6 @@ img {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    text-decoration: none;
     color: #fff;
     display: block;
     background-color: #ef4652;
@@ -414,7 +437,6 @@ img {
     text-transform: uppercase;
     font-size: 14px;
     text-align: center;
-    text-decoration: none;
     color: #fff;
     background-color: #ee3643;
     border-radius: 4px;
@@ -448,7 +470,6 @@ img {
     margin-bottom: 23px;
     margin-right: 38px;
     line-height: 18px;
-    text-decoration: none;
     text-transform: uppercase;
     display: flex;
 }
@@ -469,8 +490,25 @@ img {
     display: flex;
 }
 
-fieldset {
-    border: none;
+.by-price,
+.producer,
+.power {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.by-price {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 16px;
+}
+
+.producer {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.power {
+    border-bottom: none;
 }
 
 .page-content-filter {
@@ -525,6 +563,7 @@ fieldset {
 
 .range-controls .toggle {
     position: absolute;
+    padding: 0;
     top: 30px;
     left: 30px;
     width: 4px;
@@ -632,6 +671,7 @@ fieldset {
     margin-bottom: 20px;
     background: #f7f3ec;
     border-radius: 3px;
+    justify-content: space-between;
     display: flex;
 }
 
@@ -664,6 +704,114 @@ fieldset {
 .product-item {
     width: 220px;
     margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.product-item .mark {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.product-item .new-mark {
+    background: url("img/new-flag.png") no-repeat 0 0;
+}
+
+.product-item .actions {
+    font-size: 17px;
+    position: absolute;
+    top: 545px;
+    left: 945px;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+.product-item .actions {
+    display: none;
+}
+
+.product-item:hover .actions {
+    display: block;
+}
+
+.buy,
+.bookmark {
+    display: block;
+    min-height: 18px;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.bookmark {
+    width: 134px;
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+}
+
+.discount,
+.price {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.product-title {
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.discount {
+    min-height: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.price {
+    position: relative;
+    min-height: 20px;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+
+.price:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 
 .filter-sort {
@@ -698,15 +846,15 @@ fieldset {
     background: #293449;
 }
 
-.logo-footer {
-    margin: 8px 55px 16px 55px;
-}
-
 .index-logo-footer {
     width: 220px;
+    height: 63px;
     font-size: 45px;
+    line-height: 45px;
+    text-align: center;
     background-color: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
+    display: inline-block;
 }
 
 .index-logo-footer:hover {
@@ -717,9 +865,13 @@ fieldset {
     background-color: #ba2732;
 }
 
+.about-us {
+    width: 330px;
+}
+
 .footer-contacts {
-    margin-top: 50px;
-    margin-bottom: 28px;
+    width: 330px;
+    margin-top: 55px;
     font-size: 18px;
     line-height: 24px;
     font-style: normal;
@@ -727,21 +879,22 @@ fieldset {
 }
 
 .content-items {
+    width: 600px;
     margin-top: 40px;
+    text-align: right;
 }
 
 .content-items a {
     font-size: 18px;
     line-height: 24px;
     font-family: "Cuprum", "Arial", sans-serif;
-    text-decoration: none;
 }
 
 .footer-menu,
 .footer-second-menu {
     justify-content: space-between;
-    width: 550px;
-    display: flex;
+    width: 600px;
+    display: inline-block;
 }
 
 .footer-menu a {
@@ -754,6 +907,7 @@ fieldset {
 
 .footer-menu li,
 .footer-second-menu li {
+    padding: 0 0 0 50px;
     display: inline;
 }
 
@@ -777,6 +931,7 @@ fieldset {
 }
 
 .footer-indent {
+    list-style: none;
     margin-top: 40px;
 }
 
@@ -799,7 +954,6 @@ fieldset {
     width: 42px;
     height: 42px;
     line-height: 42px;
-    text-decoration: none;
     background: #212a3a;
     border-radius: 50px;
 }
@@ -839,7 +993,6 @@ fieldset {
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
-    text-decoration: none;
     font-family: "Cuprum", "Arial", sans-serif;
     color: #ffd180;
 }
